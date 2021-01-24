@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <center>
+        <h1> Family tree</h1>
+        <img id = "image"src = "https://i.redd.it/pjsce94po1041.jpg" style = "width:490px;">
+      <h3 id = "a"> father </h3>    
+      <button onclick = "change()" style = "background-color:red; border:2px solid black;"> Next</button>
+    </center>
+
+<script>
+
+var images = ["https://i.redd.it/pjsce94po1041.jpg" 
+, "https://i.pinimg.com/originals/44/16/6d/44166daa936ac0bc53baddd786335c8c.jpg",
+ "https://1.bp.blogspot.com/-89tOw6KqiIc/XP5yKKkMcRI/AAAAAAAAKbU/OxO0eZ4uJtMojUtaQ1lykCj04uHHlzhNwCLcBGAs/s1600/itachi.jpg" ,
+  "https://www.anime-planet.com/images/characters/mais-mother-rascal-does-not-dream-of-bunny-girl-senpai-154294.jpg" ,
+   "https://i.pinimg.com/originals/4d/3f/5a/4d3f5a7258e55c0bda738ead6186fbe8.png"];
+var count_img = 1;
+
+var words = ["Father" , "Son" , "Big brother" , "Mother" , "grandfather"];
+
+function change() {
+    document.getElementById("image").src = images[count_img];
+    document.getElementById("a").innerHTML = words[count_img];
+    
+   count_img++
+
+if (count_img === 5) {
+   count_img = 0;
+}
+
+}
+
+</script>
+
+    </body>
+</html>
